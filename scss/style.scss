@@ -41,11 +41,15 @@ main {
 
 			h1 {
 				span {
-					display: inline-block;
-					transform: scale(2);
+					display: inline-flex; //inline-block
+					transform: scale(2) rotate(120deg) translateX(100px);
 					//인라인 요소는 transform 안먹어서 inline-block 처리 해야돼
 					transition-duration: 0.5s;
 					opacity: 0;
+
+					// &:nth-of-type(2) {
+					// 	transition-duration: 1s;
+					// }
 				}
 			}
 
@@ -55,7 +59,7 @@ main {
 
 				h1 {
 					span {
-						transform: scale(1);
+						transform: scale(1) rotate(0deg) translateX(0px);
 						opacity: 1;
 					}
 				}

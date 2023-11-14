@@ -48,14 +48,14 @@ main {
     align-items: center;
     font-size: 4rem; }
     main .boxs article h1 span {
-      display: inline-block;
-      transform: scale(2);
+      display: inline-flex;
+      transform: scale(2) rotate(120deg) translateX(100px);
       transition-duration: 0.5s;
       opacity: 0; }
     main .boxs article.on {
       opacity: 1; }
       main .boxs article.on h1 span {
-        transform: scale(1);
+        transform: scale(1) rotate(0deg) translateX(0px);
         opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
