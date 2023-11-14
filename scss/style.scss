@@ -39,8 +39,26 @@ main {
 			align-items: center;
 			font-size: 4rem;
 
+			h1 {
+				span {
+					display: inline-block;
+					transform: scale(2);
+					//인라인 요소는 transform 안먹어서 inline-block 처리 해야돼
+					transition-duration: 0.5s;
+					opacity: 0;
+				}
+			}
+
+			// box가 활성화 되었을 때
 			&.on {
 				opacity: 1;
+
+				h1 {
+					span {
+						transform: scale(1);
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}

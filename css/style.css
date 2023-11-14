@@ -47,7 +47,15 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 4rem; }
+    main .boxs article h1 span {
+      display: inline-block;
+      transform: scale(2);
+      transition-duration: 0.5s;
+      opacity: 0; }
     main .boxs article.on {
       opacity: 1; }
+      main .boxs article.on h1 span {
+        transform: scale(1);
+        opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
